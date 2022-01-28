@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&family=Dongle:wght@300;400;700&family=Nanum+Myeongjo:wght@700&family=Nanum+Pen+Script&display=swap");
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  font-family: "Dongle", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  height: 360px;
+  height: 790px;
+  background-color: white;
+  margin: 20px auto;
+  border-radius: 40px;
+}
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px 20px;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.page-header i {
+  display: flex;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  height: 190px;
+  width: 190px;
+}
+
+.album img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  box-shadow: 0px 10px 40px -10px tomato;
+}
+
+.album h1 {
+  margin-top: 45px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.album h2 {
+  font-size: 25px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.4);
+}
+.shuffleandlike-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 45px;
+  width: 100%;
+  padding: 0px 55px;
+  margin-top: 35px;
+}
+
+.shuffle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  width: 120px;
+  height: 100%;
+  border-radius: 25px;
+  box-shadow: 0px 0px 20px -10px black;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.shuffle-btn span {
+  padding-top: 3px;
+}
+
+.like-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 120px;
+  height: 100%;
+  border-radius: 25px;
+  box-shadow: 0px 0px 20px -17px black;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.like-btn i {
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.like-btn span {
+  padding-top: 3px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.song-list {
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  width: 360px;
+  padding: 0px 15px;
+  margin-top: 20px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.song-list::-webkit-scrollbar {
+  display: none;
+}
+
+.song-list_song {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 15px;
+  padding: 0px 20px;
+}
+
+.song-list_song:nth-child(2) {
+  box-shadow: 0px 0px 20px -15px black;
+  position: relative;
+}
+.now-selected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  margin-right: 20px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 17px;
+}
+
+.now-selected i {
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.song-list__content {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 80px;
+}
+
+.song-list__content img {
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.song-list__content-caption {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-list__content-caption {
+  font-size: 25px;
+}
+
+.song-list__content-caption__artist {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.song-list__option {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.now-playing {
+  margin: 0px 15px;
+  padding: 15px;
+  width: 100%;
+}
+.now-playing-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: 70px;
+  border-radius: 35px;
+  padding: 0px 25px;
+  box-shadow: 0px 0px 20px -10px black;
+}
+
+.now-playing__caption {
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  color: white;
+}
+
+.now-playing__caption-artist {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.now-playing__btn {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.now-playing__btn i {
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+.now-playing__btn i:nth-child(2) {
+  font-size: 25px;
+}
