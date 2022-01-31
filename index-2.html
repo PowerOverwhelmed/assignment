@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment11 - Music player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="playing-page">
+      <header class="playing-page-header">
+        <i class="fas fa-arrow-left"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </header>
+      <section class="playing-page__album">
+        <img src="pirate.jpg" />
+        <h1 class="artist">Pirate Coder</h1>
+        <h2 class="genre">EDM, Party</h2>
+      </section>
+      <section class="playing-page__bar">
+        <div class="playing-page__bar__time">
+          <span>1:25</span>
+          <span>2:50</span>
+        </div>
+        <input class="playing-page__bar__range" type="range" />
+      </section>
+      <section class="playing-page__controll-btn">
+        <i class="fas fa-redo font-color__gray"></i>
+        <i class="fas fa-step-backward"></i>
+        <div class="controll-btn__playing">
+          <i class="fas fa-play"></i>
+        </div>
+        <i class="fas fa-step-forward"></i>
+        <i class="fas fa-random font-color__gray"></i>
+      </section>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/c993299b9a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
